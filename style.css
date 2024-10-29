@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+}
+
+#app {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#stations_list {
+    width: 200px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 10px;
+}
+
+li {
+    margin: 5px;
+    padding: 5px;
+}
+
+#station {
+    width: 700px;
+}
+
+#station_info {
+    width: 620px;
+}
+
+@media (max-width: 950px) {
+    #stations_list, #station {
+      flex: 100%;
+    }
+    #station {
+        order: 1
+    }
+    #stations_list {
+        order: 2
+    }
+}
