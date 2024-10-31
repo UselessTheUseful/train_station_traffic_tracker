@@ -2,14 +2,20 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>train station traffic tracker</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
     <div id="app">
-        <ul id="stations_list"></ul>
+        <div id="stations">
+            <h2 id="staions_list_heading">Select station</h2>
+            <p>search</p>
+            <input id="search">
+            <ul id="stations_list"></ul>
+        </div>
         <div id="station">
+            <h2 id="station_title"></h1>
             <table id="station_info"></table>
         </div>
         <script src="script.js"></script> 

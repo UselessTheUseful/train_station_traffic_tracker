@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    font-family: Arial, sans-serif;
 }
 
 #app {
@@ -7,24 +8,57 @@ body {
     flex-wrap: wrap;
 }
 
-#stations_list {
+#stations {
     width: 200px;
-    list-style-type: none;
     margin: 0px;
     padding: 10px;
+    background-color: lightgray;
+}
+
+#search {
+    margin: 5px;
+    width: 180px;
+}
+
+p {
+    margin: 5px;
+}
+
+#stations_list {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
 }
 
 li {
     margin: 5px;
     padding: 5px;
+    background-color: lightskyblue;
 }
 
-#station {
-    width: 700px;
+li:hover {
+    background-color: cadetblue;
 }
 
 #station_info {
-    width: 620px;
+    max-width: 700px;
+}
+
+h2 {
+    margin: 15px;
+}
+
+table {
+    margin: 15px;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 5px;
+}
+
+tr {
+    border-bottom: 2px solid gray;
 }
 
 @media (max-width: 950px) {
@@ -34,7 +68,7 @@ li {
     #station {
         order: 1
     }
-    #stations_list {
+    #stations {
         order: 2
     }
 }
